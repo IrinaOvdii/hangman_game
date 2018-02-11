@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="http://res.cloudinary.com/irinaovdii/image/upload/v1518261488/Hangman2_snvvpi.jpg" className="App-logo" alt="logo" />
+          <img src="http://res.cloudinary.com/irinaovdii/image/upload/v1518363371/HangmanTitle_hn5qie.png" className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Hangman Game!</h1>
         </header>
 

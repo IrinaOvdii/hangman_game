@@ -5,6 +5,7 @@ class Guess extends PureComponent{
   onClick() {
     const guess = this.refs.letter.value.toLowerCase();
     this.props.output(guess);
+    document.getElementById('letter').value=''
   }
 
   render(){
