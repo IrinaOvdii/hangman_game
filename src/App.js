@@ -6,6 +6,8 @@ import Process from './components/Process'
 import Guess from './components/Guess'
 import ShowGuess from './showGuess'
 import CountWrong from './components/countWrong'
+import Winner from './components/winner'
+import StartButton from './components/StartButton'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +15,8 @@ class App extends Component {
     this.showGuess = new ShowGuess();
     this.state = {
       guess: this.showGuess.placeholder(),
-      count: this.showGuess.wrongLetter()
+      count: this.showGuess.wrongLetter(),
+      isWinner: this.showGuess.isWinner()
 
     }
   }
@@ -22,11 +25,11 @@ class App extends Component {
     console.log(guess);
     this.setState({
       guess: this.showGuess.oneLetter(guess),
-      count: this.showGuess.wrongLetter()
+      count: this.showGuess.wrongLetter(),
+      isWinner: this.showGuess.isWinner()
 
     });
   }
-
 
   render() {
     return (
@@ -42,7 +45,10 @@ class App extends Component {
 
         <CountWrong count={this.state.count}/>
 
-    </div>
+        <Winner isWinner={this.state.isWinner} />
+
+        <StartButton />
+      </div>
 
     );
   }

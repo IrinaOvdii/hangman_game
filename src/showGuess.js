@@ -33,16 +33,18 @@ class ShowGuess {
   }
 
   wrongLetter() {
-    // let count = 0
     return this.letters.filter(letter => this.word.indexOf(letter) == -1).length;
-    // let letter = this.letters[i]
-    // if this.word.indexOf(letter) == -1
-      // count++
+  }
+
+  isWinner() {
+    let filtered = this.word.split('').filter(letter => !this.letters.includes(letter))
+    return filtered.length == 0
   }
 }
 
-
-
-
-
 export default ShowGuess
+// const mapStateToProps = ({ word }) => ({
+//   word
+// })
+//
+// export default connect(mapStateToProps)(ShowGuess)

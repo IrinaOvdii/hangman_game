@@ -6,12 +6,16 @@ import Guess from './Guess'
 class CountWrong extends PureComponent{
 
     render(){
-      return (
-        <div>
-          <h1>{ this.props.count }</h1>
-        </div>
-
+      if (this.props.count >= 6 ) {
+        return (
+          <h4>'Game is over!'</h4>
+        )
+      }
+      else {
+        return (
+        <h4>Counter of failed letters: { this.props.count }</h4>
       )
+      }
     }
 }
 
