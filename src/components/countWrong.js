@@ -10,7 +10,7 @@ class CountWrong extends PureComponent{
         return (
           <div>
             <h4>Game is over!</h4>
-            <img src="http://res.cloudinary.com/irinaovdii/image/upload/c_scale,w_274/v1518360023/gameover_dwjo3c.jpg" className="App-loser" alt="img-loser" />
+            <img src="http://res.cloudinary.com/irinaovdii/image/upload/c_scale,w_325/v1518387919/Game_over_tdrrlk.png" className="App-loser" alt="img-loser" />
           </div>
         )
       }

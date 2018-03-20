@@ -43,6 +43,7 @@ class ShowGuess {
 }
 
 export default ShowGuess
+
 // const mapStateToProps = ({ word }) => ({
 //   word
 // })

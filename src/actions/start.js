@@ -1,7 +1,7 @@
 
 export const START = 'START'
 
-const words  = ['hello', 'bingo', 'dog', 'cat', 'game', 'action', 'watch'];
+const words  = ['hello', 'bingo', 'dog', 'cat', 'game', 'watch'];
 
 function newWord(){
   const word = words[Math.floor(Math.random()*words.length-1)];

@@ -22,7 +22,6 @@ class App extends Component {
   }
 
   output(guess){
-    console.log(guess);
     this.setState({
       guess: this.showGuess.oneLetter(guess),
       count: this.showGuess.wrongLetter(),
